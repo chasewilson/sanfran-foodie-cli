@@ -1,7 +1,28 @@
 import math
+import csv
+
+DATA = []
+# Load Food Truck Data
+with open('data/ft_data.csv', mode='r') as f:
+    reader = csv.DictReader(f, skipinitialspace=True)
+    for line in reader:
+        # Filter for Food Tucks with approved status
+        # later on, might be able to expand this to filter the data set more.
+        # e.g., a function to handle filtering the data set
+        if line['Status'] == 'APPROVED':
+            DATA.append(line)
+
 
 def get_foodtrucks(latitude, longitude):
-    ret_list = []
+    """
+    Sorts the trucks by destination from specified latitude and longitude
+    Returns the 5 closest food trucks as a list of dictionaries.
+    """
+    for truck in DATA:
+        truck["distance"] = distance((latitude, longitude), (float(truck['Latitude']), float(truck['Longitude'])))
+    sorted_trucks = sorted(DATA, key=lambda i: i['distance'])
+    return  sorted_trucks[0:5]
+
 
 def distance(origin, destination):
     """
