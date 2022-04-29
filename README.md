@@ -107,4 +107,5 @@ There is a lot of work left to do to make this tool production ready including:
 - improving ease of use (lat and long is difficult for a user to use for example)
 - command and feature discovery in-tool
 - in-tool help
+- unit testing
 - and the list goes on.
