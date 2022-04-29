@@ -98,4 +98,13 @@ Currently the data includes multiple entries for possible locations of a given f
 
 ## Final Notes
 
-There is a lot of work left to do to make this tool productino ready including fixing warnings in `setup.py` and distribution tasks to feature readiness.
+There is a lot of work left to do to make this tool production ready including:
+
+- fixing warnings in `setup.py`
+- distribution tasks
+- verifying input
+- error handling
+- improving ease of use (lat and long is difficult for a user to use for example)
+- command and feature discovery in-tool
+- in-tool help
+- and the list goes on.
