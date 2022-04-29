@@ -47,11 +47,11 @@ The setup and operation of this tool can be completed entirely in a terminal
 
 You should now be ready to run the tool.
 
-You will call the tool by typing `foodtruck` into your terminal. This by itself won't do anything currently but in the future could list all options available. For now, the tool only has one command and functionalitt.
+You will call the tool by typing `foodtruck` into your terminal. This by itself won't do anything currently but in the future could list all options available. For now, the tool only has one command and functionality.
 
 ### `foodtruck nearme`
 
-You can use `foodtruck nearme` to list the **5** closest food trucks based on a latitiude and longitude you provide using the `--latitude` and `--longitude` parameters.
+You can use `foodtruck nearme` to list the **5** closest food trucks based on a latitude and longitude you provide using the `--latitude` and `--longitude` parameters.
 
 ```bash
 foodtruck nearme --latitude 37.7749295  --longitude -122.4194155
@@ -82,7 +82,7 @@ The data used has multiples of different food trucks due to it being a list of f
 
 ### Filter by food type
 
-User could specify the type of food they want and receive a filterd list of closest food trucks by food type.
+User could specify the type of food they want and receive a filtered list of closest food trucks by food type.
 
 ### Choose how many trucks to return
 
