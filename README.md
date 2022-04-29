@@ -1,5 +1,7 @@
 # Food Truck finding command line tool
 
+As someone who spends a lot of time in a terminal and enjoys the easy access to information I chose to create a command line tool to meet the requirements.
+
 SanFran foodie cli is a command line tool that allows you to find food trucks near a location specified in your command.
 
 ## Long Description
