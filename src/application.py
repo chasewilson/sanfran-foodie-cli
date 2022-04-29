@@ -1,13 +1,4 @@
-import json
 import math
-
-with open('./data/truck-data.json', 'r') as f:
-    DATA = json.load(f)
-
-    for item in DATA['data'][:5]:
-        print(item)
-        print('')
-        print('')
 
 def get_foodtrucks(latitude, longitude):
     ret_list = []
