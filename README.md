@@ -47,6 +47,8 @@ The setup and operation of this tool can be completed entirely in a terminal
 
 You should now be ready to run the tool.
 
+> **NOTE:** The food trucks used are only ones in an approved state. There won't ben any listed with expired or in review applications.
+
 You will call the tool by typing `foodtruck` into your terminal. This by itself won't do anything currently but in the future could list all options available. For now, the tool only has one command and functionality.
 
 ### `foodtruck nearme`
