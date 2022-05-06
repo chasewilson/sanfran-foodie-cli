@@ -111,3 +111,19 @@ There is a lot of work left to do to make this tool production ready including:
 - in-tool help
 - unit testing
 - and the list goes on.
+
+## Development thought process and trade offs
+
+I started with focusing on delivering something functional in the allotted time and then improving over time. This comes with benefits and tradeoffs as I'll explain below.
+
+### Python
+
+Choosing Python was in part made by familiarity as well as attempting something new. I could have easily written a PowerShell module to work well in a PowerShell sessions and gained benefits like tab completion. However, I wanted to be able to attempt to build my own working CLI and explore the process a bit more.
+
+Python is much more performant than PowerShell but still not near as performant as other option. For example, Go, could have brought many benefits like speed and better deliverable packaging. I.e. a single executable after compilation rather than an entire python package. If I were to hand this off to another team afterwards, my choice would have likely been driven by what the receiving team felt comfortable with. If i made the app in any choice that the customer would not want to use, it would be better to ensure supportability after I'm gone than a minor performance increase.
+
+### Data
+
+I chose to use local CSV data for two reasons. The amount of data is relatively small and is easy to store locally. This removes reliability of an online connection and isi very fast. The second reason is due to the refresh rate of the data. According to the data source, data is only refreshed once a week meaning there is little risk of the information being outdated especially if there was a refresh check to import updated data.
+
+This doesn't discount the fact that the customer has the potential to receive out of date information or other benefits if the customer wanted to expand the scope of the app. If I were to continue the project, depending on the need of the customer and what they would want to use the tool for, I would build out a data refresh mechanism as well as build out a database to use some of the reliable functionality for geo-location features in something like SQL or Kusto.
